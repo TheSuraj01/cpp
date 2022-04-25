@@ -1,0 +1,83 @@
+#include <iostream>
+#include <cmath>
+#define pi 3.14;
+using namespace std;
+
+int main()
+{
+    cout << "***************************************" << endl;
+    cout << "***************************************" << endl;
+    cout << "       HI I AM YOUR CALCULATOR         " << endl;
+    cout << "***************************************" << endl;
+    cout << "***************************************" << endl;
+    cout << " " << endl;
+    int c;
+    int x; // input value = x
+    cout << "Choose  your function and enter. Your options are given below :: " << endl;
+    cout << " " << endl;
+    cout << "(1) Sin(x) (2) Cos(x) (3) Tan(x) \n(4) Sin Inverse(x) (5) Cos Inverse(x) (6) Tan Inverse(x)" << endl;
+    cout << "(7) Log(x) (8) Exponancial(x) (9) Power(x,y) \n(10) Square root(x) " << endl;
+    cin >> c;
+    cout << " " << endl;
+
+    switch (c)
+    {
+    case 1:
+        cout << "Enter the input value of x:: " << endl;
+        cin >> x;
+        cout << "The value of Sin(" << x << ") = " << sin(x) << endl;
+        break;
+    case 2:
+        cout << "Enter the input value of x:: " << endl;
+        cin >> x;
+        cout << "The value of Cos(" << x << ") = " << cos(x) << endl;
+        break;
+    case 3:
+        cout << "Enter the input value of x:: " << endl;
+        cin >> x;
+        cout << "The value of Tan(" << x << ") = " << tan(x) << endl;
+        break;
+    case 4:
+        cout << "Enter the input value of x:: " << endl;
+        cin >> x;
+        cout << "The value of asin(" << x << ") = " << asin(x) << endl;
+        break;
+    case 5:
+        cout << "Enter the input value of x:: " << endl;
+        cin >> x;
+        cout << "The value of acos(" << x << ") = " << acos(x) << endl;
+        break;
+    case 6:
+        cout << "Enter the input value of x:: " << endl;
+        cin >> x;
+        cout << "The value of atan(" << x << ") = " << atan(x) << endl;
+        break;
+    case 7:
+        cout << "Enter the input value of x:: " << endl;
+        cin >> x;
+        cout << "The value of log(" << x << ") = " << log(x) << endl;
+        break;
+    case 8:
+        cout << "Enter the input value of x:: " << endl;
+        cin >> x;
+        cout << "The value of exp(" << x << ") = " << exp(x) << endl;
+        break;
+    case 9:
+        cout << "Enter the input value of x:: " << endl;
+        cin >> x;
+        int y;
+        cout << "Enter the power :: " << endl;
+        cin >> y;
+        cout << "The value of pow(" << x << ") = " << pow(x, y) << endl;
+        break;
+    case 10:
+        cout << "Enter the input value of x:: " << endl;
+        cin >> x;
+        cout << "The value of sqrt(" << x << ") = " << sqrt(x) << endl;
+        break;
+    }
+    cout << " " << endl;
+    cout << "        THANK YOU FOR USING ME         " << endl;
+
+    return 0;
+}
